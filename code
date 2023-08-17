@@ -1,0 +1,9 @@
+-- this data was from www.practise.com
+-- it is about the prices of different types of houses in Bristol between 2019 and 2022. 
+-- the main SQL skills I have shown here are: data cleaning, basic queeries, agregate functions and joining 
+-- I then created a visualisation of this data using POWER BI which is available to view on the another file HERE 
+
+SELECT * ROUND(MAX(averagepropprice), 1) AS 'Average Property Price'
+FROM propertyprices
+WHERE year >= 2019 
+
